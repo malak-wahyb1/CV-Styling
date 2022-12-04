@@ -1,0 +1,280 @@
+
+body{
+    background: while;
+    max-width: 1300px;
+    position: relative;
+}
+html{
+    display: flex;
+    justify-content: center;
+}
+header {
+    background-color: #999999;
+    padding: 0 20%;
+  }
+  
+  header div {
+    display: flex;
+   
+    
+  }
+  
+  header div hgroup {
+    color: red;
+  }
+dl{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+    
+}
+dl a{
+    color: red;
+    background-color: red;
+}
+dt{
+float: left;
+width: 50%;
+background-color: red;
+padding: 0;
+margin: 0;
+color: white;
+width: 20%;
+
+
+}
+dt a{
+    color: red;
+    background-color: black;
+}
+dd{
+float: left;
+width: 50%;
+background-color: black;
+padding: 0;
+margin: 0;
+
+
+}
+dd a{
+    color: red;
+    background-color: black;
+    
+}
+.contact-value{
+    color: black;
+}
+
+#contact{
+    position: absolute;
+    top: 25px;
+    left: 650px;
+    width: 50%;  
+}
+#contact>h3{
+    display: none;
+}
+
+#about{
+    float: left;
+  margin: 0 1.5%;
+  width: 50%;
+ height: 350px;
+}
+#competencies{
+    float: right;
+    margin: 0 1.5%;
+    width: 40%;
+    height: 320px;
+}
+
+/*body{
+    background-color: black;
+}*/
+#experiences{
+    float: left;
+  margin: 0 1.5%;
+  width: 50%;
+  height:500px;
+}
+#education{
+    float: right;
+    margin: 0 1.5%;
+    width: 40%;
+    height: 500px;
+}
+#hobbies{
+    float: left;
+    margin: 0 1.5%;
+    width: 63%;
+}
+
+
+div h3{
+    border-bottom: solid lightgrey 1px;
+    padding-bottom:10px;
+}
+.content{
+      padding: 10px 180px;
+}
+div[data-skill]{
+    border: solid 5px lightgrey;
+    margin: 3px;
+    padding: 2px 4px;
+    color: white;
+}
+.skills-primary::before{
+    content: "Main";
+}
+section>.skills-primary>[data-skill="5"]{
+    background: linear-gradient(90deg, red 50%,lightgrey 50% );
+    
+}
+section>.skills-primary>[data-skill="3"]{
+  background:   linear-gradient(90deg, red 0%, red 30%, lightgrey 10%,lightgrey 100%);
+}
+section>.skills-primary>[data-skill="1"]{
+    background:   linear-gradient(90deg, red 0%, red 10%, lightgrey 10%,lightgrey 100%);
+  }
+ 
+  .skills-secondary::before{
+    content: "Other";
+}
+section>.skills-secondary>[data-skill="9"]{
+    background:   linear-gradient(90deg, rgb(236, 87, 87) 0%, rgb(236, 87, 87) 90%, lightgrey 10%,lightgrey 100%);
+  }
+  section>.skills-secondary>[data-skill="5"]{
+    background:   linear-gradient(90deg, rgb(236, 87, 87) 0%, rgb(236, 87, 87) 60%, lightgrey 10%,lightgrey 100%);
+  }
+  section>.skills-secondary>[data-skill="7"]{
+    background:   linear-gradient(90deg, rgb(236, 87, 87) 0%, rgb(236, 87, 87) 77%, lightgrey 10%,lightgrey 100%);
+  }
+  h4{
+    color: red;
+  } 
+  .experience .experience-institution::before {
+    content: "@";
+
+  }
+  .experience .experience-institution::before {
+    content: "@";
+    
+  }
+  .experience-institution{
+   font-weight: lighter;
+  }
+  .experience-date-separator{
+    color: red;
+  }
+  .experience-details{
+  opacity: 0.5;
+  }
+  .experience-details::before{
+    content: "in";
+  }
+  section>h3{
+    position: relative;
+    padding-left: 30px;
+  }
+  h3::before{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    top: -2px;
+  left: 0;
+  }
+
+  @media (max-width: 767px) {
+    header{
+        width: 100%;
+        padding: 20px 0;
+        display: block;
+
+    }
+    header>div{
+        display: block;
+        justify-content: center;
+
+    }
+    
+    .content {
+      margin-right: 0;
+      margin-left: 0;
+      padding: 0 15px;
+    }
+    #about{
+        width: 100%;
+        display: block;
+        height: 200px;
+        padding: 20px 0;
+    }
+    #competencies{
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+    #experiences{
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+    #education{
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+        left: 10px;
+    }
+    #hobbies{
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+    #contact{
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+       right: 100%;
+       padding: 20px 0;
+       
+    }
+    #contact>h3{
+        display: block;
+    }
+    .contact{
+       display: block;
+    }
+    section:last-child h3::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -2px;
+        left: 0;
+        background-color: red;
+        border-radius: 50%;
+      }
+    dd a{
+        color: red;
+        background-color: white;
+    }
+    dd{
+        background-color: white;
+    }
+    .contact-value{
+        color: white;
+    }
+    dl{
+        background-color: white;
+    }
+    
+      
+    
+  }
