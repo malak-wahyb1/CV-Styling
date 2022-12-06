@@ -1,482 +1,258 @@
-*{
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-  
-}
-hgroup>h2{
-  display: none;
-}
-hgroup>h1{
-    padding-bottom: 10px
-    
-}
-
-header div {
-  position: relative;
-}
-
-header div::after {
-  content: "";
-  opacity: 0.5;
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: rgb(211, 207, 207);
-  top: 60px;
-  z-index: -1;
-  
-}
-
-
-
 body{
-  max-width: 1800px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 20px 20px 30px 10px;
-  width: 95%;
-  margin-left: 25%;
-  padding-right: 25%;
+  width: 70%;
+  margin: auto;
 }
-body {
+#about>h3, h2, #contact h3 , #contact .contacts dl dt , #contact .contacts dl dd{
+  display: none;
+}  
+.contacts .contact-email , .contacts .contact-phone ,.contacts .contact-github ,.contacts .contact-facebook {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-right: 10px;
+}
+.contacts{
   display: flex;
   justify-content: center;
+  align-items: center;
+
 }
-header>div{
-  display: flex;
+.contacts .contact-email{
+  background-image: url('../images/email.png');
+
 }
-figure>img{
-  
- margin-left: 900px;
- transform: rotate(-23deg);
-margin-bottom :30px;
+.contacts .contact-phone{
+  background-image: url('../images/phone.png');
 }
 
-#about>h3{
-  display: none;
+.contacts .contact-github{
+  background-image: url('../images/github.png');
 }
-
-#about>p{
+.contacts .contact-facebook{
+  background-image: url('../images/facebook.png');
+}
+#about p{
+  position: relative;
   display: flex;
   opacity: 0.5;
-  position: relative;
- bottom: 100px;
- width:50%;
- font-style: italic;
- 
-  
+bottom: 10px;
+  width: 50%;
+  margin-bottom: 10%;
 }
-.experience{
-  padding-left:15px;
-  border-left: 1px solid gray;
-
+hgroup{
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightblue;
 }
-
-
+figure{
+  position: absolute;
+  left: 1300px;
+  top: -0.5px;
+  width: 280px;
+  transform: rotate(-20deg);
+}
+img{
+  width: 150px;
+  height:150px;
+}
 #competencies, #experiences, #education, #hobbies{
   display: grid;
-  grid-template-columns: 10% 80%;
+  grid-template-columns: 15% 85%;
   grid-template-rows: 50% 50%;
-  padding: 18px;
- 
+  margin-bottom: 30px;
 }
 h3{
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  margin-right:50px
 }
-
 .skills-primary.skill{
   grid-column: 2 / 3;
   grid-row: 1 / 3;
-  width: 50%;
 }
 .skills-secondary{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  width: 50%;
 }
-.experience:first-child{
+.experience, .skills-primary, .skills-secondary{
+  padding-left:10px;
+  border-left: 1px solid gray;
+
+}
+#experience:first-child{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  width: 50%;
   
- 
 }
 .experience:last-child{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  width: 50%;
- 
-}
- #education{
-  margin-top: 30px
-
-}
-
-.skills>.skill{
-  display: inline;
-}
-
-/* #hobbies{
-  padding: 10px;
-} */
-
-
-.skills-secondary, .skills-primary{
-  padding-left:10px;
-  border-left: 1px solid gray;
- 
-
-}
-ul{
-  padding-left:30px;
-  border-left: 1px solid gray;
-
-}
-
-#hobbies {
- margin-top: 25px;
-  display: flex;
-}
-
-#hobbies h3 {
-  padding-right: 60px;
-}
-#contact>h3{
-display: none;
-}
-#contact .contacts dt {
-  display: none;
-
-}
-
-#contact .contacts a {
-  display: none;
-
-}
-
-
-#contact .contact-skype {
-  display: none;
-
-}
-
-#contact .contacts .contact-email{
-  background-image: url(../images/email.png);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-width: 90px;
-height: 90px;
-}
-
-#contact .contacts .contact-phone{
-  background-image: url(../images/phone.png);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-width: 90px;
-height: 90px;
-}
-#contact .contacts .contact-github{
-  background-image: url(../images/github.png);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-width: 90px;
-height: 90px;
-}
-#contact .contacts .contact-facebook{
-  background-image: url(../images/facebook.png);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-width: 90px;
-height: 90px;
-}
-
-.contacts {
-display: flex;
-position: center;
-margin-left: 380px;
-}
-
-.experience-details{
-  display: flex;
-    position: absolute;
-    margin-left: 738px;
-    margin-top: 10;
-    margin-top: -23px;
-}
-p{
-  margin-top: 30px;
-}
-.experience-location{
-  color: darkgray;
-  padding-right: 5px;
-}
-.experience-date{
-  color: darkgray;
-}
-.experience-date-separator{
-  color:darkcyan;
-}
-.experience>h4{
-  color: darkcyan;
-}
-#competencies {
-  display: grid;
-  grid-template-areas: 
-  'h3 primary'
-  'h3 secondary'
-  ;
-  margin-bottom: 40px;
-  width: 50%;
-}
-
-#competencies h3 {
-  grid-area: h3;
-}
-
-#competencies .skills .skill {
-  background-color: #008080;
-  padding: 13px;
-  color: #fff;
-  margin: 4px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#competencies .skills-primary {
-  grid-area: primary;
-  margin-left: -20px;
-}
-
-#competencies .skills-primary div:first-child::after {
-  content: "\2605" "\2605" "\2605";
-}
-
-#competencies .skills-primary div:nth-child(2)::after {
-  content: "\2605" "\2605";
-}
-
-#competencies .skills-primary div:last-child::after {
-  content: "\2605";
-}
-
-#competencies .skills-secondary .skill {
-  /* transform: scale(.9); */
-  font-size: 12px;
-}
-
-#competencies .skills .skill span {
-  margin-right: 37px
-}
-
-#competencies .skills-secondary div:first-child::after {
-  content: "\2605" "\2605" "\2605" "\2605" "\2605";
-}
-
-#competencies .skills-secondary div:nth-child(2)::after {
-  content: "\2605" "\2605" "\2605";
-}
-
-#competencies .skills-secondary div:last-child::after {
-  content: "\2605" "\2605" "\2605" "\2605";
-}
-
-#competencies .skills-secondary {
-  grid-area: secondary;
-}
-
-#competencies .skills {
-  display: flex;
-  margin-left: 65px;
-}
-#competencies .skills-secondary{
-  height: 10px;
-}
-@media (max-width: 767px) {
-  #wrapper {
-    width: 90%;
-    padding: 0 auto;
-    justify-content: center;
-  }
-
-  header {
-    margin-bottom: 200px;
-  }
-
-  header div {
-    position: relative;
-    left: 198px;
-    padding: -19px;
-  }
-  
-
-  header div figure {
-    display: none;
-  }
-
-  section h3 {
-    border-right: none;
-    border-bottom: 1px solid #000;
-    width: min-content;
-    font-style: italic;
-  }
-
-  #about {
-    position: absolute;
-    top: 162px;
-    left: -381px;
-    width: 665px;
-    padding-left: 69px;
-    margin-left: 386px;
-}
-hgroup{
-  
-}
-#about p {
-  display: flex;
-  opacity: 0.5;
-  position: relative;
-  bottom: 101px;
-  width: 50%;
-  left: 25%;
-  font-style: italic;
-}
-  #competencies h3 {
-    border-right: none;
-    grid-area: h3;
-    position: relative;
-    margin-bottom: 171px;
-    left: 119px;
-    top: -20px;
-}
-  
-
-  #experiences h3 {
-    border-right: 0;
-    grid-area: h3;
-    position: relative;
-    margin-bottom: 20px;
-    left: 119px;
-    top: -20px;
-}
-#experiences p {
-  border-right: none;
-    grid-area: h3;
-    position: relative;
-    margin-bottom: 20px;
-    left: 119px;
-    top: -20px;
-    width: 390px;
-    height: 73px;
-}
-
-  #competencies .skills {
-    margin-left: 0;
-    margin-left: 57px;
-  }
-
-  #competencies .skills-primary {
-    grid-area: primary;
-  }
-
-  #competencies .skills-secondary {
-    grid-area: secondary;
-  }
-
-  #experiences {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #experiences .experience {
-    padding-left: 0;
-  }
-
-  #experiences .experience h4 {
-    margin-top: 30px;
-  
-      color: darkcyan;
-      margin-left: 113px;
-  }
-  
-
- 
-  #education .experience .experience-details {
-    margin-left: auto;
-    margin-top: 30px;
-  }
-
-  #education {
-    display: flex;
-    flex-direction: column;
-      margin-top: 43px;
-      margin-left: 115px;
-      border: #fff;
-  
-  }
-
-  #education .experience {
-    padding-left: 0;
-  }
-
-  #education .experience h4 {
-    margin-top: 30px;
-  }
-  #education .experience p {
-    border-right: none;
-    grid-area: h3;
-    position: relative;
-    margin-bottom: 20px;
-    left: 3px;
-    top: -20px;
-    width: 390px;
-    height: 73px;
-  }
-  #education .experience .experience-details {
-    margin-left: auto;
-    margin-top: 30px;
-  }
-
-
-  #hobbies {
-    flex-direction: column;
-    margin-top: 25px !important;
-    margin-left: 107px;
 }
 .skills-primary, .skills-secondary{
-  border-left:0cm;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.experience{
-  border-left: 0cm;
+#competencies .skills .skill span{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 150px;
+}
+.skill{
+  background-color: rgb(21, 85, 82);
+  border: 1px solid rgb(21, 85, 82);
+  color:white;
+  margin: 10px;
+  padding:1% 6%;
+}
+ul{
+  margin-left:3px;
+  border-left:1px solid gray;
+}
+.experience-details{
+ text-align: right;
+ color:lightgray;
+}
+.experience-date-separator, h4{
+  color:rgb(21, 85, 82);
+}
+.experience-details{
+  position: relative;
+  bottom:45px;
+  right: 0;
+}
+.contact-email {
+  background-image: url(../images/email.png);
+  position: relative;
 }
 
-#hobbies ul {
-  border-left: 0px;
+.contact-phone {
+  background-image: url(../images/phone.png);
+  position: relative;
 }
-  #hobbies h3 {
-    margin-bottom: 15px;
-  }
 
-  #contact {
-display: flex;
-  }
-
-  #contact .contacts {
-    
-    justify-content: flex-start;
-    margin-left: 90px;
-  }
-  .experience-location {
-    color: darkgray;
-    margin-left: -313px;
-  }
-  .experience-date{
-    margin-left: 9px;
-  }
+.contact-github {
+  background-image: url(../images/github.png);
+  position: relative;
 }
+
+.contact-facebook {
+  background-image: url(../images/facebook.png);
+  position: relative;
+}
+.content #competencies .skill[data-skill="5"] span::after{
+  content: "✭✭✭";
+}
+.content #competencies .skill[data-skill="3"] span::after{
+  content: "✭✭";
+}
+.content #competencies .skill[data-skill="1"] span::after{
+  content: "✭";
+}
+.content #competencies .skill[data-skill="9"] span::after{
+  content: "✭✭✭✭";
+}
+.content #competencies .skill[data-skill="7"] span::after{
+  content: "✭✭✭✭";
+}
+@media only screen and (max-width: 710px) {
+  /* For mobile phones: */
+  body{
+      width: 100%;
+  }
+  hgroup{
+      margin-left: 15px;
+  }
+  #about> p{
+      width: 90%;
+      margin-left:20px;
+  }
+  figure, .experience-institution{
+      display: none;
+  }
+  .experience, .skills-primary, .skills-secondary, ul{
+      border: none;
+  }
+  .skills-primary, .skills-secondary{
+      position: relative;
+      width: min-content;
+      height: 19%;
+      top:40px;
+      padding-bottom: 30px;
+      padding-top: 15px;
+      margin-left:4px;
+      margin-right: 4px;
+      left:5px;
+      right:10px;
+  }
+  #competencies> div{
+      width: max-content;
+      height: max-content;
+  }
+  h3{
+      position: relative;
+      margin-bottom: 10px;
+      padding-bottom: 14px;
+      text-decoration: underline;
+      left: 19px;
+      font-size: 18px;
+  }
+  #experience:first-child, #experience:last-child, h4{
+      text-align: center;
+      position: relative;
+      padding-top: 14px;
+      padding-bottom: 15px;
+      top: 30px;
+      right: 145px;
+      
+  }
+  .skill{
+      background-color: rgb(21, 85, 82);
+      border: 1px solid rgb(21, 85, 82);
+      color: white;
+      margin: 3px;
+      padding: 1% 6%;
+      width: 53px;
+  }
+  .skill{
+      position: relative;
+      right:10px;
+      font-size: 12px;
+  }
+  span{
+      position: relative;
+      font-size: 10px;
+      right:20px
+  }
+      .experience-details{
+          margin: 0;
+          padding: 0;
+          right:6px;
+          bottom: 20px;
+          font-size: 10px;
+      }
+      .experience-description{
+          position: relative;
+          right:45px
+      }
+      .experience-location{
+          position: relative;
+          right: 12px;
+      }
+      .experience-date{
+          position: relative;
+          left:20px;
+      }
+      .experience-type{
+          position: relative;
+          right: 30px;
+          font-size: 15px;
+      }
+      ul{
+          position: relative;
+          top: 40px;
+          right:40px;
+          margin-bottom: 14px;
+      }
+  }

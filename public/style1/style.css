@@ -144,13 +144,13 @@ section>.skills-primary>[data-skill="1"]{
     content: "Other";
 }
 section>.skills-secondary>[data-skill="9"]{
-    background:   linear-gradient(90deg, rgb(236, 87, 87) 0%, rgb(236, 87, 87) 90%, lightgrey 10%,lightgrey 100%);
+    background:   linear-gradient(90deg, rgb(236, 87, 87) 0%, rgb(236, 87, 87) 10%, lightgrey 10%,lightgrey 100%);
   }
   section>.skills-secondary>[data-skill="5"]{
-    background:   linear-gradient(90deg, rgb(236, 87, 87) 0%, rgb(236, 87, 87) 60%, lightgrey 10%,lightgrey 100%);
+    background:   linear-gradient(90deg, rgb(236, 87, 87) 0%, rgb(236, 87, 87) 80%, lightgrey 10%,lightgrey 100%);
   }
   section>.skills-secondary>[data-skill="7"]{
-    background:   linear-gradient(90deg, rgb(236, 87, 87) 0%, rgb(236, 87, 87) 77%, lightgrey 10%,lightgrey 100%);
+    background:   linear-gradient(90deg, rgb(236, 87, 87) 0%, rgb(236, 87, 87) 10%, lightgrey 10%,lightgrey 100%);
   }
   h4{
     color: red;
